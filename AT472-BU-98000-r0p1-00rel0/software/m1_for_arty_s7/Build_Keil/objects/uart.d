@@ -1,0 +1,16 @@
+.\objects\uart.o: ..\uart\uart.c
+.\objects\uart.o: ..\main\m1_for_arty.h
+.\objects\uart.o: ..\cmsis\Device\Include\peripherallink.h
+.\objects\uart.o: ..\cmsis\Device\Include\ARTY_CM1\ARTY_CM1.h
+.\objects\uart.o: ..\cmsis\CMSIS\Include\core_CM1.h
+.\objects\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: ..\cmsis\CMSIS\Include\core_cmInstr.h
+.\objects\uart.o: ..\cmsis\CMSIS\Include\core_cmFunc.h
+.\objects\uart.o: ..\cmsis\Device\Include\ARTY_CM1\system_ARTY_CM1.h
+.\objects\uart.o: ..\uart\uart.h
+.\objects\uart.o: ..\sdk_workspace\standalone_bsp_0\CORTEX_M1_0\include\xparameters.h
+.\objects\uart.o: ..\sdk_workspace\standalone_bsp_0\CORTEX_M1_0\include\xuartlite.h
+.\objects\uart.o: ..\sdk_workspace\standalone_bsp_0\CORTEX_M1_0\include\xil_types.h
+.\objects\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\uart.o: ..\sdk_workspace\standalone_bsp_0\CORTEX_M1_0\include\xil_assert.h
+.\objects\uart.o: ..\sdk_workspace\standalone_bsp_0\CORTEX_M1_0\include\xstatus.h

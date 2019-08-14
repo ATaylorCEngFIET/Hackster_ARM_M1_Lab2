@@ -1,0 +1,79 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port DAPLink -pg 1 -y 270 -defaultsOSRD
+preplace port nTRST -pg 1 -y 40 -defaultsOSRD
+preplace port qspi_flash -pg 1 -y 570 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 250 -defaultsOSRD
+preplace port usb_uart -pg 1 -y 250 -defaultsOSRD
+preplace port push_buttons_4bits -pg 1 -y 810 -defaultsOSRD
+preplace port TDI -pg 1 -y 20 -defaultsOSRD
+preplace port rgb_led -pg 1 -y 790 -defaultsOSRD
+preplace port led_4bits -pg 1 -y 1070 -defaultsOSRD
+preplace port reset -pg 1 -y 290 -defaultsOSRD
+preplace port dip_switches_4bits -pg 1 -y 1090 -defaultsOSRD
+preplace portBus TDO -pg 1 -y 1150 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y 810 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 6 -y 1150 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -y 570 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 1090 -defaultsOSRD
+preplace inst Clocks_and_Resets -pg 1 -lvl 2 -y 260 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 2 -y 800 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 950 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 5 -y 810 -defaultsOSRD
+preplace inst daplink_if_0 -pg 1 -lvl 5 -y 340 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -y 80 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -y 380 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y 950 -defaultsOSRD
+preplace inst CORTEXM1_AXI_0 -pg 1 -lvl 3 -y 380 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 5 -y 590 -defaultsOSRD
+preplace netloc axi_quad_spi_0_SPI_0 1 5 2 NJ 570 NJ
+preplace netloc S_AXI_1 1 4 1 1410
+preplace netloc Clocks_and_Resets_dbgresetn 1 2 1 630
+preplace netloc V2C_DAPLink_interface_DAPLink_fittedn 1 1 5 220 720 NJ 720 NJ 720 NJ 720 1880
+preplace netloc xlconstant_1_dout 1 1 1 NJ
+preplace netloc TDI_1 1 0 1 N
+preplace netloc clk_wiz_0_clk_cpu 1 2 3 650 220 1070 610 1480
+preplace netloc ext_spi_clk 1 2 3 620J 230 1090J 600 1430
+preplace netloc axi_uartlite_0_interrupt 1 1 5 210 430 550J 680 NJ 680 NJ 680 1890
+preplace netloc CortexM1DbgAXI_0_TDO 1 6 1 NJ
+preplace netloc CORTEXM1_AXI_0_CM1_AXI3 1 3 1 1080
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 NJ
+preplace netloc V2C_DAPLink_interface_spi_irq 1 1 5 230 710 NJ 710 NJ 710 NJ 710 1840
+preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1460
+preplace netloc xlconcat_1_dout 1 2 1 600
+preplace netloc Clocks_and_Resets_sysresetn 1 2 1 640
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 2 2 NJ 210 1100
+preplace netloc V2C_DAPLink_interface_UART_out 1 5 2 NJ 250 NJ
+preplace netloc V2C_DAPLink_interface_nSRST 1 1 5 180 150 NJ 150 NJ 150 1530J 170 1860
+preplace netloc V2C_DAPLink_interface_qspi_irq 1 1 5 180 410 570J 630 1040J 650 1510J 480 1830
+preplace netloc sys_clock 1 0 2 NJ 250 NJ
+preplace netloc axi_gpio_1_GPIO2 1 5 2 NJ 810 NJ
+preplace netloc axi_uartlite_0_tx 1 4 2 1530 190 1850
+preplace netloc axi_interconnect_0_M04_AXI 1 4 1 1440
+preplace netloc daplink_if_0_SWCLK 1 2 4 660 160 NJ 160 1500J 180 1840
+preplace netloc daplink_if_0_SWDI 1 2 4 660 660 NJ 660 1520J 490 1820
+preplace netloc CORTEXM1_AXI_0_SWDO 1 3 2 1060 640 1500J
+preplace netloc CORTEXM1_AXI_0_SYSRESETREQ 1 1 3 180 400 590J 530 1040
+preplace netloc xlconcat_0_dout 1 2 1 580
+preplace netloc axi_gpio_0_GPIO2 1 5 2 NJ 1090 NJ
+preplace netloc axi_gpio_1_ip2intc_irpt 1 1 5 200 730 NJ 730 NJ 730 NJ 730 1810
+preplace netloc axi_gpio_0_GPIO 1 5 2 NJ 1070 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1400
+preplace netloc axi_gpio_0_ip2intc_irpt 1 1 5 210 700 NJ 700 NJ 700 NJ 700 1820
+preplace netloc V2C_DAPLink_interface_Shield_out 1 5 2 NJ 270 NJ
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1450
+preplace netloc proc_sys_reset_1_interconnect_aresetn 1 2 3 610 620 NJ 620 1490
+preplace netloc axi_gpio_1_GPIO 1 5 2 NJ 790 NJ
+preplace netloc V2C_DAPLink_interface_qspi_xip_irq 1 1 5 190 420 560J 670 NJ 670 1530J 500 1810
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 1 5 230 440 540J 690 NJ 690 NJ 690 1810
+preplace netloc nTRST_1 1 0 1 N
+preplace netloc axi_interconnect_0_M03_AXI 1 4 1 1420
+preplace netloc CORTEXM1_AXI_0_SWDOEN 1 3 2 1050 630 1470J
+preplace netloc reset 1 0 2 NJ 290 NJ
+preplace netloc V2C_DAPLink_interface_uart_rxd_axi 1 5 1 1870
+levelinfo -pg 1 0 100 390 850 1250 1670 1990 2110 -top -10 -bot 1210
+",
+}
+

@@ -1,0 +1,4067 @@
+!SESSION 2019-08-13 10:59:35.220 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data V:/software/m1_for_arty_s7/sdk_workspace
+
+!ENTRY org.eclipse.ui 2 0 2019-08-13 11:00:33.602
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-08-13 11:00:33.602
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-08-13 11:00:34.690
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-08-13 11:00:34.690
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:49.593
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:49.598
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:52.890
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:52.896
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:52.907
+!MESSAGE XSCT Command: [setws V:/software/m1_for_arty_s7/sdk_workspace], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:52.925
+!MESSAGE XSCT command with result: [setws V:/software/m1_for_arty_s7/sdk_workspace], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:53.025
+!MESSAGE XSCT Command: [::hsi::utils::openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.456
+!MESSAGE XSCT command with result: [::hsi::utils::openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.493
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Thu Sep 20 14:20:31 2018",
+"vivado_version": "2018.2",
+"part": "xc7s50csga324-1",
+}]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.511
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.542
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, {"Clocks_and_Resets_clk_wiz_0": {"hier_name": "Clocks_and_Resets_clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_const_1": {"hier_name": "Clocks_and_Resets_i_const_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_interconnect_aresetn": {"hier_name": "Clocks_and_Resets_i_interconnect_aresetn",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_inv_dbgresetn": {"hier_name": "Clocks_and_Resets_i_inv_dbgresetn",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_inv_sysresetn1": {"hier_name": "Clocks_and_Resets_i_inv_sysresetn1",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_peripheral_aresetn1": {"hier_name": "Clocks_and_Resets_i_peripheral_aresetn1",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_sysresetn_or": {"hier_name": "Clocks_and_Resets_i_sysresetn_or",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_proc_sys_reset_DAPLink": {"hier_name": "Clocks_and_Resets_proc_sys_reset_DAPLink",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_proc_sys_reset_base": {"hier_name": "Clocks_and_Resets_proc_sys_reset_base",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"Cortex_M1_0": {"hier_name": "Cortex_M1_0",
+"type": "CORTEXM1_AXI",
+"version": "1.1",
+"ip_type": "PROCESSOR",
+},
+"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_interconnect_0": {"hier_name": "axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"axi_quad_spi_0": {"hier_name": "axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"blk_mem_gen_0": {"hier_name": "blk_mem_gen_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"daplink_if_0_DAPLink_to_Arty_shield_0": {"hier_name": "daplink_if_0_DAPLink_to_Arty_shield_0",
+"type": "DAPLink_to_Arty_shield",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"daplink_if_0_axi_gpio_0": {"hier_name": "daplink_if_0_axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"daplink_if_0_axi_interconnect_0": {"hier_name": "daplink_if_0_axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"daplink_if_0_axi_quad_spi_0": {"hier_name": "daplink_if_0_axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"daplink_if_0_axi_single_spi_0": {"hier_name": "daplink_if_0_axi_single_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"daplink_if_0_axi_xip_quad_spi_0": {"hier_name": "daplink_if_0_axi_xip_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_1": {"hier_name": "xlconcat_1",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_2": {"hier_name": "xlconstant_2",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.745
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf Cortex_M1_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.766
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf Cortex_M1_0], Result: [null, {"daplink_if_0_axi_xip_quad_spi_0_AXI_FULL": {"name": "daplink_if_0_axi_xip_quad_spi_0",
+"base": "0x00000000",
+"high": "0x000FFFFF",
+"size": "1048576",
+"slaveintf": "AXI_FULL",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_xip_quad_spi_0_AXI_LITE": {"name": "daplink_if_0_axi_xip_quad_spi_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_gpio_0_S_AXI": {"name": "daplink_if_0_axi_gpio_0",
+"base": "0x40010000",
+"high": "0x4001FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_quad_spi_0_AXI_LITE": {"name": "daplink_if_0_axi_quad_spi_0",
+"base": "0x40020000",
+"high": "0x4002FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_single_spi_0_AXI_LITE": {"name": "daplink_if_0_axi_single_spi_0",
+"base": "0x40030000",
+"high": "0x4003FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40100000",
+"high": "0x4010FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40110000",
+"high": "0x4011FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x40120000",
+"high": "0x4012FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_quad_spi_0_AXI_LITE": {"name": "axi_quad_spi_0",
+"base": "0x40130000",
+"high": "0x4013FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0x60000000",
+"high": "0x60001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.844
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf Cortex_M1_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:00:56.894
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf Cortex_M1_0], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "6",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "6",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "6",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "6",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_quad_spi_0": {},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"daplink_if_0_axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"daplink_if_0_axi_quad_spi_0": {},
+"daplink_if_0_axi_single_spi_0": {},
+"daplink_if_0_axi_xip_quad_spi_0": {"SPI_RXFIFO_OR": {"description": "SPI Receive FIFO Occupancy Register",
+"address_offset": "0x78",
+"access": "read-only",
+"size": "32",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "The binary value plus 1 yields the occupancy. 
+Bit width is log(FIFO Depth). 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"XIP_Config_Reg": {"description": "XIP Configuration Register",
+"address_offset": "0x60",
+"access": "read-write",
+"size": "32",
+"fields": {"CPHA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CPHA
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CPOL": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CPOL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"XIP_Status_Reg": {"description": "XIP Status Register",
+"address_offset": "0x64",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_Empty": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Receiver Empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Receiver Full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Master_MODF": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master mode fault. This bit is set to 1 if the spisel line is deasserted.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CPOL_CPHA_Error": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CPOL_CPHA Error.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AXI_Transaction_Error": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "AXI Transaction Error.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:06:22.242
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "V:/vivado/Arm_sw_repository"], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:06:22.339
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "V:/vivado/Arm_sw_repository"], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.403
+!MESSAGE XSCT Command: [::hsi::utils::openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.417
+!MESSAGE XSCT command with result: [::hsi::utils::openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.423
+!MESSAGE XSCT Command: [hsi get_hw_files -of_object [openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf ; hsi current_hw_design]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.432
+!MESSAGE XSCT command with result: [hsi get_hw_files -of_object [openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf ; hsi current_hw_design]], Result: [null, m1_for_arty_s7.hwh m1_for_arty_s7_bd.tcl]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.456
+!MESSAGE XSCT Command: [::hsi::utils::closehw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.484
+!MESSAGE XSCT command with result: [::hsi::utils::closehw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.489
+!MESSAGE XSCT Command: [::hsi::utils::openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.648
+!MESSAGE XSCT command with result: [::hsi::utils::openhw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.656
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/aptay/AppData/Local/Temp/system9050726528408286789.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:36:17.826
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/aptay/AppData/Local/Temp/system9050726528408286789.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.230
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Tue Aug 13 11:11:04 2019",
+"vivado_version": "2018.2",
+"part": "xc7s50csga324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.254
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.273
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, {"CORTEXM1_AXI_0": {"hier_name": "CORTEXM1_AXI_0",
+"type": "CORTEXM1_AXI",
+"version": "1.1",
+"ip_type": "PROCESSOR",
+},
+"Clocks_and_Resets_clk_wiz_0": {"hier_name": "Clocks_and_Resets_clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_const_1": {"hier_name": "Clocks_and_Resets_i_const_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_interconnect_aresetn": {"hier_name": "Clocks_and_Resets_i_interconnect_aresetn",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_inv_dbgresetn": {"hier_name": "Clocks_and_Resets_i_inv_dbgresetn",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_inv_sysresetn1": {"hier_name": "Clocks_and_Resets_i_inv_sysresetn1",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_peripheral_aresetn1": {"hier_name": "Clocks_and_Resets_i_peripheral_aresetn1",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_i_sysresetn_or": {"hier_name": "Clocks_and_Resets_i_sysresetn_or",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_proc_sys_reset_DAPLink": {"hier_name": "Clocks_and_Resets_proc_sys_reset_DAPLink",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"Clocks_and_Resets_proc_sys_reset_base": {"hier_name": "Clocks_and_Resets_proc_sys_reset_base",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_interconnect_0": {"hier_name": "axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"axi_quad_spi_0": {"hier_name": "axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"blk_mem_gen_0": {"hier_name": "blk_mem_gen_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"daplink_if_0_DAPLink_to_Arty_shield_0": {"hier_name": "daplink_if_0_DAPLink_to_Arty_shield_0",
+"type": "DAPLink_to_Arty_shield",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"daplink_if_0_axi_gpio_0": {"hier_name": "daplink_if_0_axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"daplink_if_0_axi_interconnect_0": {"hier_name": "daplink_if_0_axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"daplink_if_0_axi_quad_spi_0": {"hier_name": "daplink_if_0_axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"daplink_if_0_axi_single_spi_0": {"hier_name": "daplink_if_0_axi_single_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"daplink_if_0_axi_xip_quad_spi_0": {"hier_name": "daplink_if_0_axi_xip_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_1": {"hier_name": "xlconcat_1",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_2": {"hier_name": "xlconstant_2",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.282
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf CORTEXM1_AXI_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.299
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf CORTEXM1_AXI_0], Result: [null, {"daplink_if_0_axi_xip_quad_spi_0_AXI_FULL": {"name": "daplink_if_0_axi_xip_quad_spi_0",
+"base": "0x00000000",
+"high": "0x000FFFFF",
+"size": "1048576",
+"slaveintf": "AXI_FULL",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_xip_quad_spi_0_AXI_LITE": {"name": "daplink_if_0_axi_xip_quad_spi_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_gpio_0_S_AXI": {"name": "daplink_if_0_axi_gpio_0",
+"base": "0x40010000",
+"high": "0x4001FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_quad_spi_0_AXI_LITE": {"name": "daplink_if_0_axi_quad_spi_0",
+"base": "0x40020000",
+"high": "0x4002FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"daplink_if_0_axi_single_spi_0_AXI_LITE": {"name": "daplink_if_0_axi_single_spi_0",
+"base": "0x40030000",
+"high": "0x4003FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40100000",
+"high": "0x4010FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40110000",
+"high": "0x4011FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x40120000",
+"high": "0x4012FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_quad_spi_0_AXI_LITE": {"name": "axi_quad_spi_0",
+"base": "0x40130000",
+"high": "0x4013FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0x60000000",
+"high": "0x60001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.347
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf CORTEXM1_AXI_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:37:34.391
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf CORTEXM1_AXI_0], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "6",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "6",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "6",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "6",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_quad_spi_0": {},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"daplink_if_0_axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"daplink_if_0_axi_quad_spi_0": {},
+"daplink_if_0_axi_single_spi_0": {},
+"daplink_if_0_axi_xip_quad_spi_0": {"SPI_RXFIFO_OR": {"description": "SPI Receive FIFO Occupancy Register",
+"address_offset": "0x78",
+"access": "read-only",
+"size": "32",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "The binary value plus 1 yields the occupancy. 
+Bit width is log(FIFO Depth). 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"XIP_Config_Reg": {"description": "XIP Configuration Register",
+"address_offset": "0x60",
+"access": "read-write",
+"size": "32",
+"fields": {"CPHA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CPHA
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CPOL": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CPOL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"XIP_Status_Reg": {"description": "XIP Status Register",
+"address_offset": "0x64",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_Empty": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Receiver Empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Receiver Full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Master_MODF": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master mode fault. This bit is set to 1 if the spisel line is deasserted.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CPOL_CPHA_Error": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CPOL_CPHA Error.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AXI_Transaction_Error": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "AXI Transaction Error.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:36.067
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:36.087
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, {"CORTEXM1_AXI_0": {"standalone_v6_7": {"name": "standalone",
+"version": "6.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "V:/vivado/Arm_sw_repository/CortexM/bsp/standalone_v6_7",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:47.858
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf -sw standalone_bsp_0 -dir V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0 -processor CORTEXM1_AXI_0 -os standalone], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:47.896
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf -sw standalone_bsp_0 -dir V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0 -processor CORTEXM1_AXI_0 -os standalone], Result: [null, ]. Thread: ModalContext
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-08-13 11:43:48.331
+!MESSAGE Indexed 'standalone_bsp_0' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.744
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.759
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.765
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.775
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.800
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf CORTEXM1_AXI_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.808
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf CORTEXM1_AXI_0], Result: [null, axi_bram_ctrl_0 axi_gpio_0 axi_gpio_1 axi_quad_spi_0 axi_uartlite_0 daplink_if_0_axi_gpio_0 daplink_if_0_axi_quad_spi_0 daplink_if_0_axi_single_spi_0 daplink_if_0_axi_xip_quad_spi_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.814
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.2",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"daplink_if_0_axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"daplink_if_0_axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"daplink_if_0_axi_single_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"daplink_if_0_axi_xip_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"CORTEXM1_AXI_0": {"name": "cpu_cortexm1",
+"ver": "1.1",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.832
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.906
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf], Result: [null, {"CORTEXM1_AXI_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexm1_v1_1": {"name": "cpu_cortexm1",
+"version": "1.1",
+"repo": "V:/vivado/Arm_sw_repository/CortexM/drivers/cpu_cortexm1_v1_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"Clocks_and_Resets_clk_wiz_0": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"Clocks_and_Resets_i_const_1": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_i_interconnect_aresetn": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_i_inv_dbgresetn": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_i_inv_sysresetn1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_i_peripheral_aresetn1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_i_sysresetn_or": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_proc_sys_reset_DAPLink": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"Clocks_and_Resets_proc_sys_reset_base": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_bram_ctrl_0": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_3": {"name": "gpio",
+"version": "4.3",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_3": {"name": "gpio",
+"version": "4.3",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_interconnect_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_quad_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_4": {"name": "spi",
+"version": "4.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"blk_mem_gen_0": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"daplink_if_0_DAPLink_to_Arty_shield_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"daplink_if_0_axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_3": {"name": "gpio",
+"version": "4.3",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"daplink_if_0_axi_interconnect_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"daplink_if_0_axi_quad_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_4": {"name": "spi",
+"version": "4.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"daplink_if_0_axi_single_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_4": {"name": "spi",
+"version": "4.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"daplink_if_0_axi_xip_quad_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_4": {"name": "spi",
+"version": "4.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"xlconcat_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_1": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_1": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_2": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.950
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.956
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.962
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.970
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.987
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:48.995
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.057
+!MESSAGE XSCT Command: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.064
+!MESSAGE XSCT command with result: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.466
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.485
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.493
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.501
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.670
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.689
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"CORTEXM1_AXI_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-march=armv6-m -mthumb -Wall -Wextra",
+"default": "-march=armv6-m -mthumb -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.798
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.814
+!MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v1_4": {"name": "libmetal",
+"version": "1.4",
+"desc": "Libmetal Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/ThirdParty/sw_services/libmetal_v1_4",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5 psu_cortexa53 microblaze",
+},
+"lwip202_v1_1": {"name": "lwip202",
+"version": "1.1",
+"desc": "lwip202 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/ThirdParty/sw_services/lwip202_v1_1",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"openamp_v1_5": {"name": "openamp",
+"version": "1.5",
+"desc": "OpenAmp Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/ThirdParty/sw_services/openamp_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5",
+},
+"xilffs_v3_9": {"name": "xilffs",
+"version": "3.9",
+"desc": "Generic Fat File System Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilffs_v3_9",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilflash_v4_4": {"name": "xilflash",
+"version": "4.4",
+"desc": "Xilinx Flash library for Intel/AMD CFI compliant parallel flash",
+"compilerflags": "",
+"linkerflags": "-lxilflash",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilflash_v4_4",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilfpga_v4_1": {"name": "xilfpga",
+"version": "4.1",
+"desc": "XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilfpga,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilfpga_v4_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilisf_v5_11": {"name": "xilisf",
+"version": "5.11",
+"desc": "Xilinx In-system and Serial Flash Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilisf_v5_11",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilmfs_v2_3": {"name": "xilmfs",
+"version": "2.3",
+"desc": "Xilinx Memory File System",
+"compilerflags": "",
+"linkerflags": "",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilmfs_v2_3",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilpm_v2_3": {"name": "xilpm",
+"version": "2.3",
+"desc": "Power Management API Library for ZynqMP",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilpm_v2_3",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+"xilrsa_v1_5": {"name": "xilrsa",
+"version": "1.5",
+"desc": "Xilinx RSA Library to access RSA and SHA software algorithms on Zynq",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilrsa_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9",
+},
+"xilsecure_v3_1": {"name": "xilsecure",
+"version": "3.1",
+"desc": "Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilsecure_v3_1",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilskey_v6_5": {"name": "xilskey",
+"version": "6.5",
+"desc": "Xilinx Secure Key Library supports programming efuse and bbram",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_services/xilskey_v6_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psu_pmu microblaze",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.820
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.830
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.836
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.844
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.852
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:43:49.861
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.2",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"daplink_if_0_axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"daplink_if_0_axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"daplink_if_0_axi_single_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"daplink_if_0_axi_xip_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"CORTEXM1_AXI_0": {"name": "cpu_cortexm1",
+"ver": "1.1",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.498
+!MESSAGE XSCT Command: [::hsi::utils::update_mss -hw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf -mss V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.511
+!MESSAGE XSCT command with result: [::hsi::utils::update_mss -hw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf -mss V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.550
+!MESSAGE XSCT Command: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.556
+!MESSAGE XSCT command with result: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.580
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.591
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.596
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.604
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.610
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.616
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.622
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.627
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.633
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.641
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.653
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:44.683
+!MESSAGE XSCT Command: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.673
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.678
+!MESSAGE XSCT command with result: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.751
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.761
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.769
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.779
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.794
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.803
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.852
+!MESSAGE XSCT Command: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:46.860
+!MESSAGE XSCT command with result: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:48.529
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:48.915
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:48.928
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.170
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.180
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.316
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.329
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.486
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.501
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.718
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:49.733
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:49.936
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:49.945
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:49.953
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:49.963
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"procname": "CORTEXM1_AXI_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:49.981
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:49.992
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:50.002
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:50.010
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:50.016
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:50.022
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:50.029
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:50.042
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json V:/software/m1_for_arty_s7/sdk_workspace/m1_for_arty_s7_wrapper_hw_platform_0/system.hdf V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.2",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"daplink_if_0_axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"daplink_if_0_axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"daplink_if_0_axi_single_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"daplink_if_0_axi_xip_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"CORTEXM1_AXI_0": {"name": "cpu_cortexm1",
+"ver": "1.1",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:50.052
+!MESSAGE XSCT Command: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-08-13 11:48:50.062
+!MESSAGE XSCT command with result: [::hsi::utils::closesw V:/software/m1_for_arty_s7/sdk_workspace/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:50.193
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:50.204
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:50.298
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.198
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.205
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.220
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.228
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.236
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.242
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.249
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.255
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.261
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.267
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.275
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.283
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.290
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.299
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.308
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.320
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.333
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.348
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.355
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.363
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.374
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.384
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:52.901
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:53.025
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:53.036
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:53.138
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:53.191
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:53.202
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:53.314
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:54.511
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:54.524
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:54.613
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:55.920
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:55.933
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:56.068
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.454
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.460
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.469
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.474
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.479
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.486
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.492
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.498
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.505
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.511
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.518
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.524
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.530
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.539
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.544
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.551
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.555
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.561
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.568
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.574
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.579
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:48:59.586
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:49:01.356
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:49:01.372
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:49:01.472
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:49:02.912
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-08-13 11:49:02.972
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-08-13 13:31:38.121
+!MESSAGE Executed Webtalk command

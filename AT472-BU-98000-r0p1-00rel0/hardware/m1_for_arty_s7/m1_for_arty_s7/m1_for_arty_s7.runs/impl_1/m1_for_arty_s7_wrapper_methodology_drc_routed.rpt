@@ -1,0 +1,791 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Aug 13 11:32:40 2019
+| Host         : DESKTOP-HQKVQ13 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file m1_for_arty_s7_wrapper_methodology_drc_routed.rpt -pb m1_for_arty_a7_wrapper_methodology_drc_routed.pb -rpx m1_for_arty_a7_wrapper_methodology_drc_routed.rpx
+| Design       : m1_for_arty_s7_wrapper
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 133
++-----------+----------+---------------------------------------------------------+------------+
+| Rule      | Severity | Description                                             | Violations |
++-----------+----------+---------------------------------------------------------+------------+
+| CLKC-2    | Warning  | Clocking latency set by user                            | 1          |
+| DPIR-1    | Warning  | Asynchronous driver check                               | 81         |
+| LUTAR-1   | Warning  | LUT drives async reset alert                            | 1          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain         | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                       | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                        | 1          |
+| TIMING-36 | Warning  | Invalid Generated Clock due to missing edge propagation | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects             | 7          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port                | 38         |
++-----------+----------+---------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CLKC-2#1 Warning
+Clocking latency set by user  
+Clock cclk must not have the clock latency set when it is not propagated.
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1 input pin m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_cortexm1/u_core/u_dp/u_mul_shft/u_mul/nxt_mult_out0__1/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell m1_for_arty_s7_i/Clocks_and_Resets/i_sysresetn_or/Res[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ABURST_reg[0]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[0]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[10]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[11]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[12]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[16]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[17]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[18]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[19]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[1]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[26]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[27]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[28]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[2]/CLR, m1_for_arty_s7_i/CORTEXM1_AXI_0/inst/u_AhbSToAxi/uA11AhbLiteMToAxi/ADDR_reg[31]/CLR (the first 15 of 1083 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell m1_for_arty_s7_i/daplink_if_0/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X11Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell m1_for_arty_s7_i/daplink_if_0/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell m1_for_arty_s7_i/daplink_if_0/axi_single_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X51Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell m1_for_arty_s7_i/daplink_if_0/axi_single_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-36#1 Warning
+Invalid Generated Clock due to missing edge propagation  
+There is no rising/falling edge propagation between master clock cpu_clk to generated clock cclk
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-source : [get_pins -hierarchical -filter {NAME =~ *axi_single_spi_0/sck_o}]' of constraint 'create_generated_clock' uses inefficient query to find pin objects (see constraint position '25' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 133)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-source : [get_pins -hierarchical -filter {NAME =~ *axi_xip_quad_spi_0/sck_o}]' of constraint 'create_generated_clock' uses inefficient query to find pin objects (see constraint position '24' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 130)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~*QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPISEL_PULSE_S2AX_1_CDC/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: v:/hardware/m1_for_arty_s7/block_diagram/ip/m1_for_arty_s7_axi_quad_spi_0_1/m1_for_arty_s7_axi_quad_spi_0_1.xdc (Line: 49)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~*QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPISEL_PULSE_S2AX_1_CDC/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '15' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: v:/hardware/m1_for_arty_s7/block_diagram/ip/m1_for_arty_s7_axi_single_spi_0_0/m1_for_arty_s7_axi_single_spi_0_0.xdc (Line: 49)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~*RESET_SYNC_AXI_SPI_CLK_INST/RESET_SYNC_AX2S_1/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: v:/hardware/m1_for_arty_s7/block_diagram/ip/m1_for_arty_s7_axi_quad_spi_0_1/m1_for_arty_s7_axi_quad_spi_0_1.xdc (Line: 48)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~*RESET_SYNC_AXI_SPI_CLK_INST/RESET_SYNC_AX2S_1/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '14' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: v:/hardware/m1_for_arty_s7/block_diagram/ip/m1_for_arty_s7_axi_single_spi_0_0/m1_for_arty_s7_axi_single_spi_0_0.xdc (Line: 48)
+Related violations: <none>
+
+XDCB-5#7 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~*RESET_SYNC_AXI_SPI_CLK_INST/RESET_SYNC_AX2S_1/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '17' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: v:/hardware/m1_for_arty_s7/block_diagram/ip/m1_for_arty_s7_axi_xip_quad_spi_0_0/m1_for_arty_s7_axi_xip_quad_spi_0_0.xdc (Line: 48)
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'DAPLink_tri_o[12]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports {DAPLink_tri_o[12]}]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 303)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'DAPLink_tri_o[13]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports {DAPLink_tri_o[13]}]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 319)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'DAPLink_tri_o[8]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports {DAPLink_tri_o[8]}]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 317)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'dip_switches_4bits_tri_i[0]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports dip_switches*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 308)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'dip_switches_4bits_tri_i[1]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports dip_switches*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 308)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'dip_switches_4bits_tri_i[2]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports dip_switches*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 308)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'dip_switches_4bits_tri_i[3]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports dip_switches*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 308)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'led_4bits_tri_io[0]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 322)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'led_4bits_tri_io[1]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 322)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'led_4bits_tri_io[2]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 322)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'led_4bits_tri_io[3]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 322)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'push_buttons_4bits_tri_i[0]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports push_buttons*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 309)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'push_buttons_4bits_tri_i[1]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports push_buttons*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 309)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'push_buttons_4bits_tri_i[2]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports push_buttons*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 309)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'push_buttons_4bits_tri_i[3]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports push_buttons*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 309)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'reset' relative to clock cpu_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks cpu_clk] -add_delay 0.500 [get_ports reset*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 312)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'rgb_led_tri_io[0]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 323)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'rgb_led_tri_io[1]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 323)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'rgb_led_tri_io[2]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 323)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'rgb_led_tri_io[3]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 323)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'rgb_led_tri_io[4]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 323)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'rgb_led_tri_io[5]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 323)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.500 ns has been defined on port 'usb_uart_rxd' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports usb_uart_rxd]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 302)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same input delay of 5.000 ns has been defined on port 'TDI' relative to clock SWCLK for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks SWCLK] -add_delay 5.000 [get_ports TDI]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 288)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same input delay of 5.000 ns has been defined on port 'nTRST' relative to clock SWCLK for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks SWCLK] -add_delay 5.000 [get_ports nTRST]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 289)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'DAPLink_tri_o[11]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports {DAPLink_tri_o[11]}]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 305)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'led_4bits_tri_io[0]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 324)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'led_4bits_tri_io[1]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 324)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'led_4bits_tri_io[2]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 324)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'led_4bits_tri_io[3]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports led_4bits*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 324)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'rgb_led_tri_io[0]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 325)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'rgb_led_tri_io[1]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 325)
+Related violations: <none>
+
+XDCH-2#33 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'rgb_led_tri_io[2]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 325)
+Related violations: <none>
+
+XDCH-2#34 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'rgb_led_tri_io[3]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 325)
+Related violations: <none>
+
+XDCH-2#35 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'rgb_led_tri_io[4]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 325)
+Related violations: <none>
+
+XDCH-2#36 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'rgb_led_tri_io[5]' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports rgb_led*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 325)
+Related violations: <none>
+
+XDCH-2#37 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.500 ns has been defined on port 'usb_uart_txd' relative to clock slow_out_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks slow_out_clk] -add_delay 0.500 [get_ports usb_uart_txd]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 304)
+Related violations: <none>
+
+XDCH-2#38 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.000 ns has been defined on port 'TDO[0]' relative to clock SWCLK for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks SWCLK] -add_delay 5.000 [get_ports TDO*]
+V:/hardware/m1_for_arty_s7/constraints/m1_for_arty_s7.xdc (Line: 290)
+Related violations: <none>
+
+
